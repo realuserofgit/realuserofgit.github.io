@@ -1,0 +1,47 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<polymer-element name="my-element">
+
+  <template>
+    <style>
+      :host {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      #section {
+        box-sizing: border-box;
+        width: 420px;
+        height: 630px;
+        left: 0px;
+        top: -20px;
+        position: absolute;
+        background-color: rgb(255, 255, 141);
+      }
+      #div {
+        box-sizing: border-box;
+        position: relative;
+        height: 150px;
+        width: 150px;
+        color: rgb(255, 255, 255);
+        font-size: 100px;
+        background-color: rgb(255, 235, 59);
+      }
+    </style>
+    <section id="section" layout vertical center center-justified>
+      <div id="div" hero layout vertical center center-justified>
+        <span id="span">+8</span>
+      </div>
+    </section>
+  </template>
+
+  <script>
+
+    Polymer({
+
+    });
+
+  </script>
+
+</polymer-element>
